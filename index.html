@@ -23,16 +23,17 @@
           <img
             src="https://avatars.githubusercontent.com/u/53356383?s…00&u=b3616233b0249c31f0098bf8fece732db2b0bbf4&v=4"
             alt="Foto pessoal"
+            id="userImage"
           />
         </div>
 
-        <h1>Saimon Davi</h1>
-        <a href="https://github.com" target="_blank">
+        <h1 id="userName">Saimon Davi</h1>
+        <a id="userProfileGitHub" href="https://github.com" target="_blank">
           <img src="images/github.svg" alt="ícone github" />
-          SaimonDavi</a
+          <span id="userLogin">SaimonDavi</span></a
         >
 
-        <p>An estudant focused on learning programming for web</p>
+        <p id="userBio">An estudant focused on learning programming for web</p>
 
         <ul id="socialLinks">
           <li class="youtube">
@@ -59,26 +60,6 @@
       </div>
     </main>
 
-    <script>
-      const linksSocialMedia = {
-        github: 'SaimonDavi',
-        youtube: 'channel/UCSfwM5u0Kce6Cce8_S72olg',
-        facebook: 'rocketseat',
-        instagram: 'rocketseat_oficial/',
-        twitter: 'rocketseat'
-      }
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-
-          li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
-
-          alert(li.children[0].href)
-        }
-      }
-
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
